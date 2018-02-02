@@ -16,8 +16,9 @@ class ArticleListContainer extends Component {
     this.props.onMount();
   }
   render() {
+    const { onMount, ...rest } = this.props;
     return (
-      <ArticleListWithLoading {...this.props} />
+      <ArticleListWithLoading {...rest} />
     );
   }
 }
