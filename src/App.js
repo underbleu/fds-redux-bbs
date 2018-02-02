@@ -10,6 +10,7 @@ import thunk from 'redux-thunk';
 
 import LoginScreenContainer from './containers/LoginScreenContainer';
 import ListPage from './containers/ListPage';
+import NewArticlePage from './containers/NewArticlePage';
 import withAuth from './hocs/withAuth';
 import rootReducer from './ducks';
 
@@ -29,6 +30,7 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route path="/login" component={LoginScreenContainer} />
             <Route path="/list" component={ListPage} />
+            <Route path="/new-article" component={NewArticlePage} />
           </div>
         </BrowserRouter>
       </Provider >
