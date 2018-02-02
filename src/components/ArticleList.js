@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { List } from 'semantic-ui-react';
 
 export default class ArticleList extends Component {
-  static defaultProps = {
-    articles: [],
-    onMount: () => {},
-  }
-
-  componentDidMount() {
-    this.props.onMount();
-  }
+  // [무한루프해결] PC의 데이터로딩 code -> CC로 이동
+  // static defaultProps = {
+  //   articles: [],
+  //   onMount: () => {},
+  // }
+  // componentDidMount() {
+  //   this.props.onMount();
+  // }
 
   render() {
     const { articles } = this.props;
